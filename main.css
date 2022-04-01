@@ -6,6 +6,7 @@ Custom properties
     --fs-large: 2.5em;
     --fs-medium: 2em;
     --fs-small: 1.5em;
+    --res-normal: 100px;
 }
 
 
@@ -81,4 +82,26 @@ Date
     font-size: var(--fs-small);
     font-weight: 500;
     letter-spacing: 0.05em;
+}
+
+/*==================
+Eclipse Type
+===================*/
+
+.eclipse-type-section{
+    position: absolute;
+    top: 60vh;
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.type-text{
+    color: white;
+    font-size: var(--fs-small);
+}
+
+.icon-img{
+    width: var(--res-normal);
 }
