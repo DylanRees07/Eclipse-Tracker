@@ -5,7 +5,7 @@ Custom properties
 :root{
     --fs-large: 2.5em;
     --fs-medium: 2em;
-    --fs-small: 1em;
+    --fs-small: 1.5em;
 }
 
 
@@ -22,14 +22,17 @@ General properties
 /*==================
 Landing page container
 ===================*/
+
 .container{
     background: url("Assets/background.jpg");
     background-position-x: 54%;
-    background-position-y: 150%;
+    background-position-y: 65%;
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
 /*==================
@@ -41,4 +44,41 @@ Header text
     top: 20vh;
     color: white;
     font-size: var(--fs-large);
+}
+
+/*==================
+Countdown
+===================*/
+
+.countdown-section{
+    display: flex;
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-top: 4em;
+}
+
+.countdown-section h2{
+    color: white;
+    font-size: var(--fs-medium);
+    font-weight: lighter;
+}
+
+/*==================
+Date
+===================*/
+
+.date-section{
+    position: absolute;
+    top: 50vh;
+    text-align: left;
+}
+
+.date-text{
+    color: white;
+    font-size: var(--fs-small);
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
